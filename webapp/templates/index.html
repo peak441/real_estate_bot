@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Real Estate</title>
+</head>
+
+<body>
+
+<h1>🏠 Real Estate Marketplace</h1>
+
+{% for p in properties %}
+
+<div>
+
+<h3>{{ p.title }}</h3>
+
+<p>${{ p.price }}</p>
+
+<a href="/property/{{ p.id }}">
+View
+</a>
+
+</div>
+
+{% endfor %}
+
+</body>
+</html>
