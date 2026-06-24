@@ -2,8 +2,7 @@ import time
 from flask import Flask
 import telebot
 from telebot import apihelper
-from keep_alive import keep_alive
-import os
+
 
 
 # Enable middleware support before initializing the bot
@@ -68,10 +67,10 @@ if __name__ == "__main__":
         except Exception as e:
             db.session.rollback()
             print(f"Migration notice (normal if columns exist): {e}")
-    # render.com
-    keep_alive() # បើក Web server 
-    bot.polling() # ឬ bot.run() ទៅតាមប្រភេទកូដរបស់អ្នក
-    print("Starting Real Estate Bot...")
+    # # render.com
+    # keep_alive() # បើក Web server 
+    # bot.polling() # ឬ bot.run() ទៅតាមប្រភេទកូដរបស់អ្នក
+    # print("Starting Real Estate Bot...")
 
     try:
         # 2. Clean up any existing connection with retries
