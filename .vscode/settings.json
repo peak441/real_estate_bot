@@ -3,12 +3,12 @@
         {
             "ssh": "Disabled",
             "previewLimit": 50,
-            "server": "localhost",
+            "server": "postgresql://realestate:Ofy3QwjERp9XED1P5hTrKrZnT2tuAA7f@dpg-d8t4sj3tqb8s73dgeip0-a.oregon-postgres.render.com",
             "port": 5432,
             "driver": "PostgreSQL",
-            "name": "postgresconn",
-            "database": "realestate",
-            "username": "postgres"
+            "database": "realestate_2vv1",
+            "username": "realestate",
+            "name": "posgretconn"
         }
     ]
 }
